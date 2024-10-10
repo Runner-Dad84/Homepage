@@ -38,3 +38,7 @@ a {
     color: white;
     font-size: 2em;
 }
+a:hover {
+    color: gold;
+    font-weight: bolder;
+}
