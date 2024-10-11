@@ -1,3 +1,4 @@
+/*main sections*/
 body, html {
     margin: 0;
     padding: 0;
@@ -31,6 +32,14 @@ footer {
     background: lightgrey;
     height: 100vh;
 }
+/*subsections portfolio*/
+.viewer {
+    display: flex;
+    overflow: hidden;
+    height:25vh;
+    aspect-ratio: 1;
+    outline: blue solid 2px;
+}
 .slide {
     display:flex;
     justify-content: center;
@@ -39,13 +48,7 @@ footer {
     aspect-ratio: 1;
     outline: red solid 2px;
 }
-.viewer {
-    display: flex;
-    overflow: hidden;
-    height:25vh;
-    aspect-ratio: 1;
-    outline: blue solid 2px;
-}
+/*minor elements - all sections*/
 i {
     font-size: 2em;
 }
