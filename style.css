@@ -31,6 +31,21 @@ footer {
     background: lightgrey;
     height: 100vh;
 }
+.slide {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:25vh;
+    aspect-ratio: 1;
+    outline: red solid 2px;
+}
+.viewer {
+    display: flex;
+    overflow: hidden;
+    height:25vh;
+    aspect-ratio: 1;
+    outline: blue solid 2px;
+}
 i {
     font-size: 2em;
 }
