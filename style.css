@@ -6,24 +6,21 @@ body, html {
     scroll-behavior: smooth;
 }
 header, footer {
+    position: fixed;
     display: flex;
     justify-content: space-around;
     align-items: center; 
+    height: 10%;
+    width: 100%;
     z-index: 1;
     background: rgb(13, 13, 87);
     color: white;
 }
 header {
-    position: fixed;
     top:0%;
-    height: 10%;
-    width: 100%;
 }
 footer {
-    position: absolute;
     top:90%;
-    height: 10%;
-    width: 100%;
 }
 .section {
     display: flex;
