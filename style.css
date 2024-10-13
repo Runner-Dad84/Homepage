@@ -34,10 +34,14 @@ footer {
     height: 100vh;
 }
 /*subsections portfolio*/
+#portfolio {
+    --portfolio-width: 55%;
+
+}
 .viewer {
     position: relative;
     display: flex;
-    width:55%;
+    width:var(--portfolio-width);
     aspect-ratio: 1;
     outline: blue solid 2px;
 }
@@ -55,7 +59,7 @@ footer {
     scroll-margin-top: 15vh;
 }
 nav {
-    width: 55%;
+    width: var(--portfolio-width);
 }
 .slide:target {
     opacity: 1;
