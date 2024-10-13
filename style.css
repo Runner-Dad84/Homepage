@@ -34,20 +34,30 @@ footer {
 }
 /*subsections portfolio*/
 .viewer {
+    position: relative;
     display: flex;
-    overflow: hidden;
+
     height:25vh;
     aspect-ratio: 1;
     outline: blue solid 2px;
 }
 .slide {
+    position: absolute;
     display:flex;
     justify-content: center;
     align-items: center;
     height:25vh;
     aspect-ratio: 1;
+    top:0;
+    left:0;
+    opacity: 0;
     outline: red solid 2px;
+    scroll-margin-top: 40vh;
 }
+.slide:target {
+    opacity: 1;
+}
+
 /*minor elements - all sections*/
 i {
     font-size: 2em;
