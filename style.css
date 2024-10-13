@@ -37,7 +37,7 @@ footer {
 .viewer {
     position: relative;
     display: flex;
-    height:60vh;
+    width:55%;
     aspect-ratio: 1;
     outline: blue solid 2px;
 }
@@ -46,13 +46,16 @@ footer {
     display:flex;
     justify-content: center;
     align-items: center;
-    height:60vh;
+    height:100%;
     aspect-ratio: 1;
     top:0;
     left:0;
     opacity: 0;
     outline: red solid 2px;
     scroll-margin-top: 15vh;
+}
+nav {
+    width: 55%;
 }
 .slide:target {
     opacity: 1;
