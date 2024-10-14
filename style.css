@@ -72,9 +72,24 @@ footer {
 nav {
     width: var(--portfolio-width);
 }
+#slideA {
+    background-color: purple;
+    opacity: 1;
+}
+#slideB {
+    background-color: green;
+}
+#slideC {
+    background-color:blue;
+}
+#slideD {
+    background-color: orange;
+}
+
 .slide:target {
     opacity: 1;
 }
+
 
 /*minor elements - all sections*/
 i {
