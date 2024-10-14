@@ -73,7 +73,10 @@ nav {
     width: var(--portfolio-width);
 }
 #slideA {
-    background-color: purple;
+    background-image: url(images/battleship.png);
+    background-position: center;
+    background-size: cover;
+    /*default start slide*/
     opacity: 1;
 }
 #slideB {
@@ -85,12 +88,9 @@ nav {
 #slideD {
     background-color: orange;
 }
-
 .slide:target {
     opacity: 1;
 }
-
-
 /*minor elements - all sections*/
 i {
     font-size: 2em;
