@@ -54,7 +54,8 @@ footer {
     display: flex;
     width:var(--portfolio-width);
     aspect-ratio: 1;
-    outline: blue solid 2px;
+    border: solid black .5em;
+    border-radius: 15%;
 }
 .slide {
     position: absolute;
@@ -66,8 +67,8 @@ footer {
     top:0;
     left:0;
     opacity: 0;
-    outline: red solid 2px;
     scroll-margin-top: var(--scr-top-margin);
+    border-radius: 14%;
 }
 nav {
     width: var(--portfolio-width);
