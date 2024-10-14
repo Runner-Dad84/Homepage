@@ -71,7 +71,12 @@ footer {
     border-radius: 14%;
 }
 nav {
+    display: flex;
+    justify-content:space-between;
     width: var(--portfolio-width);
+}
+nav span.material-symbols-outlined a {
+    color: black;
 }
 #slideA {
     background-image: url(images/battleship.png);
