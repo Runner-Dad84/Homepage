@@ -34,9 +34,20 @@ footer {
     height: 100vh;
 }
 /*subsections portfolio*/
-#portfolio {
-    --portfolio-width: 55%;
-
+@media (min-width: 1000px) {
+    #portfolio {
+    --portfolio-width: 28%;
+}
+}
+@media (max-width: 1000px) and (min-width: 500px) {
+    #portfolio {
+    --portfolio-width: 50%;
+}
+}
+@media (max-width: 500px) {
+    #portfolio {
+    --portfolio-width: 60%;
+}
 }
 .viewer {
     position: relative;
@@ -56,7 +67,7 @@ footer {
     left:0;
     opacity: 0;
     outline: red solid 2px;
-    scroll-margin-top: 15vh;
+    scroll-margin-top: var(--scr-top-margin);
 }
 nav {
     width: var(--portfolio-width);
