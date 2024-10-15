@@ -34,20 +34,37 @@ footer {
     height: 100vh;
 }
 /*subsections portfolio*/
+#portfolio {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
 @media (min-width: 1000px) {
     #portfolio {
-    --portfolio-width: 28%;
+    --portfolio-width: 40%;
 }
 }
 @media (max-width: 1000px) and (min-width: 500px) {
     #portfolio {
-    --portfolio-width: 50%;
+    --portfolio-width: 47%;
 }
 }
 @media (max-width: 500px) {
     #portfolio {
     --portfolio-width: 60%;
 }
+}
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.projDesc {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100%;
 }
 .viewer {
     position: relative;
