@@ -34,26 +34,6 @@ footer {
     height: 100vh;
 }
 /*subsections portfolio*/
-#portfolio {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
-}
-@media (min-width: 1000px) {
-    #portfolio {
-    --portfolio-width: 39%;
-    --portfolio-tmargin: 12vh;
-}
-}
-@media (max-width: 1000px) and (min-width: 500px) {
-    #portfolio {
-    --portfolio-width: 47%;
-}
-}
-@media (max-width: 500px) {
-    #portfolio {
-    --portfolio-width: 60%;
-}
-}
 .carousel {
     display: flex;
     justify-content: center;
@@ -97,9 +77,7 @@ nav {
     width: var(--portfolio-width);
     scroll-margin-top: var(--portfolio-tmargin);
 }
-nav span.material-symbols-outlined a {
-    color: black;
-}
+
 #slideA {
     background-image: url(images/battleship.png);
     background-position: center;
@@ -119,6 +97,41 @@ nav span.material-symbols-outlined a {
 .slide:target {
     opacity: 1;
 }
+/*media for portfolio*/
+@media (min-width: 800px) {
+    #portfolio {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        --portfolio-width: 39%;
+        --portfolio-tmargin: 12vh;
+    }
+}
+@media (max-width: 800px) and (min-width: 500px) {
+    #portfolio {
+        --portfolio-width: 47%;
+    }
+};
+@media (max-width: 500px) and (min) {
+    #portfolio {
+        --portfolio-width: 70vw;
+        flex-direction: column;
+    }
+    .carousel {
+        outline: green solid 1px;
+        height: auto;
+    }
+    .projDesc {
+        font-size: 1em;
+        outline: red solid 1px;
+        height: auto;
+    }
+    footer {
+        top: 80%;
+    }
+    i {
+        font-size: 1em;
+    }
+};
 /*minor elements - all sections*/
 i {
     font-size: 2em;
@@ -127,6 +140,9 @@ a {
     text-decoration: none;
     color: white;
     font-size: 2em;
+}
+nav span.material-symbols-outlined a {
+    color: black;
 }
 a:hover {
     color: gold;
