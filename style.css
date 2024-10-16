@@ -40,7 +40,8 @@ footer {
 }
 @media (min-width: 1000px) {
     #portfolio {
-    --portfolio-width: 40%;
+    --portfolio-width: 39%;
+    --portfolio-tmargin: 12vh;
 }
 }
 @media (max-width: 1000px) and (min-width: 500px) {
@@ -62,9 +63,12 @@ footer {
 }
 .projDesc {
     display: flex;
-    justify-content: start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     height: 100%;
+    font-size: 2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .viewer {
     position: relative;
@@ -84,13 +88,14 @@ footer {
     top:0;
     left:0;
     opacity: 0;
-    scroll-margin-top: var(--scr-top-margin);
     border-radius: 14%;
+    scroll-margin-top: var(--portfolio-tmargin);
 }
 nav {
     display: flex;
     justify-content:space-between;
     width: var(--portfolio-width);
+    scroll-margin-top: var(--portfolio-tmargin);
 }
 nav span.material-symbols-outlined a {
     color: black;
