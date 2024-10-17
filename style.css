@@ -21,7 +21,7 @@ header {
     top:0%;
 }
 footer {
-    top:90%;
+    bottom: 0%;
 }
 .section {
     display: flex;
@@ -35,28 +35,31 @@ footer {
 }
 /*subsections portfolio*/
 .carousel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
+    padding-top: 2.5%;
+    padding-bottom:2.5%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 .projDesc {
+    padding: 1%;
+    grid-column: 2;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100%;
     font-size: 2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .viewer {
+    grid-column: 1;
+    justify-self: center;
     position: relative;
     display: flex;
-    width:var(--portfolio-width);
+    width: 30vw;
     aspect-ratio: 1;
     border: solid black .5em;
     border-radius: 15%;
+    scroll-margin-top: 11vh;
 }
 .slide {
     position: absolute;
@@ -69,13 +72,12 @@ footer {
     left:0;
     opacity: 0;
     border-radius: 14%;
-    scroll-margin-top: var(--portfolio-tmargin);
+    scroll-margin-top: 11vh;
 }
 nav {
+    grid-column: 1 / 3;
     display: flex;
-    justify-content:space-between;
-    width: var(--portfolio-width);
-    scroll-margin-top: var(--portfolio-tmargin);
+    justify-content:space-around;
 }
 
 #slideA {
@@ -97,7 +99,7 @@ nav {
 .slide:target {
     opacity: 1;
 }
-/*media for portfolio*/
+/*media for portfolio
 @media (min-width: 800px) {
     #portfolio {
         display: grid;
@@ -106,12 +108,13 @@ nav {
         --portfolio-tmargin: 12vh;
     }
 }
+    */
 @media (max-width: 800px) and (min-width: 500px) {
     #portfolio {
         --portfolio-width: 47%;
     }
 };
-@media (max-width: 500px) and (min) {
+@media (max-width: 500px) {
     #portfolio {
         --portfolio-width: 70vw;
         flex-direction: column;
@@ -122,11 +125,7 @@ nav {
     }
     .projDesc {
         font-size: 1em;
-        outline: red solid 1px;
         height: auto;
-    }
-    footer {
-        top: 80%;
     }
     i {
         font-size: 1em;
@@ -134,7 +133,7 @@ nav {
 };
 /*minor elements - all sections*/
 i {
-    font-size: 2em;
+    font-size: 3em;
 }
 a {
     text-decoration: none;
