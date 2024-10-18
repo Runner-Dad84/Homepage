@@ -79,7 +79,6 @@ nav {
     display: flex;
     justify-content:space-around;
 }
-
 #slideA {
     background-image: url(images/battleship.png);
     background-position: center;
@@ -99,39 +98,50 @@ nav {
 .slide:target {
     opacity: 1;
 }
-/*media for portfolio
-@media (min-width: 800px) {
-    #portfolio {
-        display: grid;
-        grid-template-columns: 3fr 1fr;
-        --portfolio-width: 39%;
-        --portfolio-tmargin: 12vh;
-    }
-}
-    */
-@media (max-width: 800px) and (min-width: 500px) {
-    #portfolio {
-        --portfolio-width: 47%;
-    }
-};
-@media (max-width: 500px) {
-    #portfolio {
-        --portfolio-width: 70vw;
-        flex-direction: column;
-    }
+/*media for portfolio*/
+@media (max-width: 899px) and (min-width: 700px) {
     .carousel {
-        outline: green solid 1px;
-        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .viewer {
+        width: 40vw;
     }
     .projDesc {
-        font-size: 1em;
-        height: auto;
+        font-size: 1.5em;
     }
-    i {
-        font-size: 1em;
+}
+@media (max-width: 699px) and (min-width: 500px) {
+    .carousel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
-};
-/*minor elements - all sections*/
+    .viewer {
+        width: 45vw;
+    }
+    .projDesc {
+        font-size: 1.5em;
+    }
+}
+@media (max-width: 499px) {
+    .carousel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .viewer {
+        width: 55vw;
+    }
+    .projDesc {
+        font-size: 1.5em;
+    }
+}
+
 i {
     font-size: 3em;
 }
