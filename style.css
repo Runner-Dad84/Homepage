@@ -33,6 +33,22 @@ footer {
     background: lightgrey;
     height: 100vh;
 }
+i {
+    font-size: 3em;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+}
+nav span.material-symbols-outlined a {
+    color: black;
+}
+a:hover {
+    color: gold;
+    font-weight: bolder;
+}
+
 
 /*subsections portfolio*/
 .carousel {
@@ -151,20 +167,4 @@ nav {
         font-size: 1.5em;
         scroll-margin-top:17vh;
     }
-}
-
-i {
-    font-size: 3em;
-}
-a {
-    text-decoration: none;
-    color: white;
-    font-size: 2em;
-}
-nav span.material-symbols-outlined a {
-    color: black;
-}
-a:hover {
-    color: gold;
-    font-weight: bolder;
 }
