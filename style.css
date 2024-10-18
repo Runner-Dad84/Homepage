@@ -33,6 +33,7 @@ footer {
     background: lightgrey;
     height: 100vh;
 }
+
 /*subsections portfolio*/
 .carousel {
     padding-top: 2.5%;
@@ -108,6 +109,10 @@ nav {
     }
     .viewer {
         width: 40vw;
+        scroll-margin-top:13vh;
+    }
+    .slide {
+        scroll-margin-top:13vh;
     }
     .projDesc {
         font-size: 1.5em;
@@ -122,6 +127,10 @@ nav {
     }
     .viewer {
         width: 45vw;
+        scroll-margin-top:16vh;
+    }
+    .slide {
+        scroll-margin-top:16vh;
     }
     .projDesc {
         font-size: 1.5em;
@@ -136,9 +145,11 @@ nav {
     }
     .viewer {
         width: 55vw;
+        scroll-margin-top:17vh;
     }
     .projDesc {
         font-size: 1.5em;
+        scroll-margin-top:17vh;
     }
 }
 
