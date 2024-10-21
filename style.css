@@ -48,8 +48,80 @@ a:hover {
     color: gold;
     font-weight: bolder;
 }
+/*home subsection*/
+#home {
+    color: white;
+    background-color: black;
+}
+.tagline {
+    animation-name: appear;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    z-index: 2;
+}
+.moon, .shadow {
+    position: absolute;
+    height: 10vh;
+    width: 10vh;
+    border-radius: 50%;
+}
+.moon {
+    background-color: lightgoldenrodyellow;
+    top: 20%; 
+    right: 15%;
+}
+.shadow {
+    background-color: black;
+    top: 19%; 
+    right: 13%;
+}
 
+@keyframes appear {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+/*
+@keyframes darken {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.2;
+    }
+    50% {
+        opacity: .4;
+    }
+    75% {
+       opacity: 0.65;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
+@keyframes brighten {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.65;
+    }
+    50% {
+        opacity: .4;
+    }
+    75% {
+       opacity: 0.2;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+*/
 /*subsections portfolio*/
 .carousel {
     padding-top: 2.5%;
