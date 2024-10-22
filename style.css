@@ -53,6 +53,10 @@ a:hover {
     color: white;
     background-color: black;
 }
+.nameF, .nameL {
+    font-size: 4em;
+    text-shadow: -.5em .5em 0.4em purple;
+}
 .tagline {
     animation-name: appear;
     animation-duration: 3s;
