@@ -61,20 +61,23 @@ a:hover {
     z-index: 2;
 }
 .moon, .shadow {
-    position: absolute;
     height: 10vh;
     width: 10vh;
     border-radius: 50%;
 }
 .moon {
-    background-color: lightgoldenrodyellow;
-    top: 20%; 
-    right: 15%;
+    position: relative;
+    box-shadow: -1em .5em 1em purple;
+    background: radial-gradient(circle at center, gray 30%, lightgoldenrodyellow 70%);
+    top: 0%;
+    right: 0%;
 }
 .shadow {
+    position: absolute;
     background-color: black;
-    top: 19%; 
-    right: 13%;
+    top: -30%; 
+    right: -30%;
+    z-index: 3;
 }
 
 @keyframes appear {
