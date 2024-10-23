@@ -69,6 +69,7 @@ a:hover {
     radial-gradient(circle, white .22vh, transparent 2.5px);
     background-size: 50vw 50vh;
     background-position: 41vw 70vh, 17vw 31vh, 81vw 20vh, 72vw 90vh;
+    animation: twinkle2 3s infinite;
 }
 #home::before {
     background: radial-gradient(circle, white .14vh, transparent 1.5px),
@@ -78,7 +79,20 @@ a:hover {
     radial-gradient(circle, white .28vh, transparent 2.5px);
     background-size: 50vw 50vh;
     background-position: 33vw 10vh, 27vw 64vh, 50vw 48vh, 9vw 40vh;
+    animation: twinkle 5s infinite;
 }
+@keyframes twinkle {
+    0% {opacity: .5;}
+    50% {opacity: 1;}
+    100% {opacity: .8;}
+}
+@keyframes twinkle2 {
+    0% {opacity: .3;}
+    50% {opacity: 1;}
+    100% {opacity: .8;}
+}
+
+
 .nameF, .nameL {
     position: relative;
     left: 10%;
