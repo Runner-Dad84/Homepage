@@ -62,15 +62,6 @@ a:hover {
     height: 100vh;
     width: 100vw;
 }
-#home::after {
-    background: radial-gradient(circle, white .1vh, transparent 1.5px),
-    radial-gradient(circle, white .15vh, transparent 1.5px),
-    radial-gradient(circle, white .2vh, transparent 2px),
-    radial-gradient(circle, white .22vh, transparent 2.5px);
-    background-size: 50vw 50vh;
-    background-position: 41vw 70vh, 17vw 31vh, 81vw 20vh, 72vw 90vh;
-    animation: twinkle2 3s infinite;
-}
 #home::before {
     background: radial-gradient(circle, white .14vh, transparent 1.5px),
     radial-gradient(circle, white .17vh, transparent 1.5px),
@@ -86,12 +77,20 @@ a:hover {
     50% {opacity: 1;}
     100% {opacity: .8;}
 }
+#home::after {
+    background: radial-gradient(circle, white .1vh, transparent 1.5px),
+    radial-gradient(circle, white .15vh, transparent 1.5px),
+    radial-gradient(circle, white .2vh, transparent 2px),
+    radial-gradient(circle, white .22vh, transparent 2.5px);
+    background-size: 50vw 50vh;
+    background-position: 41vw 70vh, 17vw 31vh, 81vw 20vh, 72vw 90vh;
+    animation: twinkle2 3s infinite;
+}
 @keyframes twinkle2 {
     0% {opacity: .3;}
     50% {opacity: 1;}
     100% {opacity: .8;}
 }
-
 
 .nameF, .nameL {
     position: relative;
