@@ -50,19 +50,56 @@ a:hover {
 }
 /*home subsection*/
 #home {
+    display: block;
     color: white;
     background-color: black;
 }
+#home::before, #home:after {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+#home::after {
+    background: radial-gradient(circle, white .1vh, transparent 1.5px),
+    radial-gradient(circle, white .15vh, transparent 1.5px),
+    radial-gradient(circle, white .2vh, transparent 2px),
+    radial-gradient(circle, white .22vh, transparent 2.5px);
+    background-size: 50vw 50vh;
+    background-position: 41vw 70vh, 17vw 31vh, 81vw 20vh, 72vw 90vh;
+}
+#home::before {
+    background: radial-gradient(circle, white .14vh, transparent 1.5px),
+    radial-gradient(circle, white .17vh, transparent 1.5px),
+    radial-gradient(circle, white .2vh, transparent 2px),
+    radial-gradient(circle, white .24vh, transparent 2px),
+    radial-gradient(circle, white .28vh, transparent 2.5px);
+    background-size: 50vw 50vh;
+    background-position: 33vw 10vh, 27vw 64vh, 50vw 48vh, 9vw 40vh;
+}
 .nameF, .nameL {
+    position: relative;
+    left: 10%;
+    top: 10%;
     font-size: 4em;
     text-shadow: -.5em .5em 0.4em purple;
 }
 .tagline {
+    position: relative;
+    left: 10%;
+    top: 15%;
     animation-name: appear;
     animation-duration: 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
     z-index: 2;
+}
+.summary {
+    position: relative;
+    left: 10%;
+    top: 20%;
 }
 .moon, .shadow {
     height: 10vh;
@@ -70,11 +107,11 @@ a:hover {
     border-radius: 50%;
 }
 .moon {
-    position: relative;
+    position: sticky;
     box-shadow: -1em .5em 1em purple;
     background: radial-gradient(circle at center, gray 30%, lightgoldenrodyellow 70%);
-    top: 0%;
-    right: 0%;
+    top: 12%;
+    left: 70%;
 }
 .shadow {
     position: absolute;
