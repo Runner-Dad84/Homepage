@@ -91,7 +91,32 @@ a:hover {
     50% {opacity: 1;}
     100% {opacity: .8;}
 }
-
+.comet {
+    position: sticky;
+    border-radius: 50%;
+    height: .75vh;
+    aspect-ratio: 1;
+    top: 40%;
+    left: 99%;
+    background-color: white;
+    animation-name: tail;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+    animation-delay: 10s;
+    opacity: 0;
+}
+@keyframes tail {
+    0% {opacity: 0;
+        transform: translate(0, 0);
+    }
+    50% {opacity: 1;
+        height: .4vh;
+    }
+    100% {opacity: 0;
+        transform: translate(-50vw, -20vh);
+        height: 0.25vh;
+    }
+}
 .nameF, .nameL {
     position: relative;
     left: 10%;
