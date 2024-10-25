@@ -33,6 +33,7 @@ footer {
     position: relative;
     background: lightgrey;
     height: 100vh;
+    width: auto;
 }
 i {
     font-size: 3em;
