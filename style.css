@@ -49,6 +49,7 @@ a:hover {
     color: gold;
     font-weight: bolder;
 }
+
 /*home subsection*/
 #home {
     display: block;
@@ -151,7 +152,7 @@ a:hover {
     position: sticky;
     box-shadow: -1em .5em 1em purple;
     background: radial-gradient(circle at center, gray 30%, lightgoldenrodyellow 70%);
-    top: 12%;
+    top: 5%;
     left: 70%;
 }
 .shadow {
@@ -168,43 +169,8 @@ a:hover {
         opacity: 100%;
     }
 }
-/*
-@keyframes darken {
-    0% {
-        opacity: 0;
-    }
-    25% {
-        opacity: 0.2;
-    }
-    50% {
-        opacity: .4;
-    }
-    75% {
-       opacity: 0.65;
-    }
-    100% {
-        opacity: 1;
-    }
-}
 
-@keyframes brighten {
-    0% {
-        opacity: 1;
-    }
-    25% {
-        opacity: 0.65;
-    }
-    50% {
-        opacity: .4;
-    }
-    75% {
-       opacity: 0.2;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-*/
+
 /*subsections portfolio*/
 .carousel {
     padding-top: 2.5%;
@@ -270,6 +236,7 @@ nav {
 .slide:target {
     opacity: 1;
 }
+
 /*media for portfolio*/
 @media (max-width: 899px) and (min-width: 700px) {
     .carousel {
