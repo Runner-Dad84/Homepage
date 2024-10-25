@@ -5,6 +5,7 @@ body, html {
     display: flex;
     flex-direction: column;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 header, footer {
     position: fixed;
@@ -138,6 +139,8 @@ a:hover {
     position: relative;
     left: 10%;
     top: 20%;
+    width: 100vw;
+    text-wrap: wrap;
 }
 .moon, .shadow {
     height: 10vh;
@@ -157,7 +160,6 @@ a:hover {
     top: -30%; 
     right: -30%;
 }
-
 @keyframes appear {
     0% {
         opacity: 0%;
