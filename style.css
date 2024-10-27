@@ -174,13 +174,26 @@ a:hover {
 /*subsections bio*/
 #bio {
     display: grid;
-    padding: 5%;
+    padding: 10%;
     grid-template-columns: 1fr 1fr;
     width: 100vw;
-    height: 100vh;
+    height: 70vh;
 }
 .picture, .text {
     outline: solid green 3px;
+}
+.picture {
+    width: 20vw;
+    aspect-ratio: 1;
+    background-position:center;
+    background-size: cover;
+}
+#pic1 {
+    background-image: url(images/IMG_5444.jpg);
+
+}
+#pic2 {
+    background-image: url(images/IMG_7711.jpg);
 }
 
 /*subsections portfolio*/
