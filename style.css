@@ -204,6 +204,20 @@ a:hover {
 #pic2 {
     background-image: url(images/IMG_7711.jpg);
 }
+@media (max-width: 1000px) {
+    #bio, .topRow, .botRow {
+        display: flex;
+        flex-direction: column;
+    }
+    .picture {
+        width: 50vw;
+    }
+}
+@media (max-width: 400px) {
+    .picture {
+        width: 40vw;
+    }
+}
 
 /*subsections portfolio*/
 .carousel {
