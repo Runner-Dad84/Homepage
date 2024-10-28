@@ -224,6 +224,9 @@ a:hover {
 }
 
 /*subsections portfolio*/
+#portfolio {
+    background-image: linear-gradient(gray, lightgrey)
+}
 .carousel {
     padding-top: 2.5%;
     padding-bottom:2.5%;
