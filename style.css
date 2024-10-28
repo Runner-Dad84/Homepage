@@ -173,30 +173,36 @@ a:hover {
 
 /*subsections bio*/
 #bio {
-    display: grid;
-    padding: 10%;
-    grid-template-columns: 1fr 1fr;
-    width: 100vw;
-    height: 70vh;
+    display: flex;
+    padding: 1%;
 }
-.picture, .text {
-    outline: solid green 3px;
+.picture  {
+    outline: solid black 3px;
 }
 .picture {
     width: 15vw;
     aspect-ratio: 1;
+    border-radius: 5%;
     background-position:center;
     background-size: cover;
 }
-
+.topRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.botRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.text {
+    width: 35vw;
+    padding: 3%;
+}
 #pic1 {
     background-image: url(images/IMG_5444.jpg);
-
 }
 #pic2 {
     background-image: url(images/IMG_7711.jpg);
-    margin-top: -10%;
-    margin-bottom: 10%;
 }
 
 /*subsections portfolio*/
