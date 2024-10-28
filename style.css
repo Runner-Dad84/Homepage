@@ -175,9 +175,11 @@ a:hover {
 #bio {
     display: flex;
     padding: 1%;
+    background-image: linear-gradient(black, gray);
 }
 .picture  {
-    outline: solid black 3px;
+    outline: solid white 3px;
+    box-shadow: -1em .5em .5em purple;;
 }
 .picture {
     width: 15vw;
@@ -195,6 +197,8 @@ a:hover {
     grid-template-columns: 1fr 1fr;
 }
 .text {
+    color: white;
+    font-weight: bolder;
     width: 35vw;
     padding: 3%;
 }
