@@ -63,6 +63,16 @@ a:hover {
     "wdth" 100;
 }
 
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 200 to 800 */
+
+.oxanium-font2 {
+  font-family: "Oxanium", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
 /*home subsection*/
 #home {
     display: block;
