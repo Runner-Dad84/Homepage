@@ -15,7 +15,7 @@ header, footer {
     height: 10%;
     width: 100%;
     z-index: 1;
-    background: rgb(13, 13, 87);
+    background-image: radial-gradient(darkgray 5%, rgb(13, 13, 87) 90%);
     color: white;
 }
 header {
