@@ -51,6 +51,18 @@ a:hover {
     font-weight: bolder;
 }
 
+/* <uniquifier>: Use a unique and descriptive class name
+ <weight>: Use a value from 200 to 900 */
+
+.inconsolata-font1 {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 /*home subsection*/
 #home {
     display: block;
@@ -352,4 +364,22 @@ nav {
     width: 100%;
     aspect-ratio: 1;
     z-index: 1;
+}
+
+/*Resume subsection */
+.resHeader {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding-left: 8em;
+    width: 40%;
+    background-image: linear-gradient(to right, gray, white);
+    border-radius: 5%;
+    border: .4em solid black;
+}
+h1 {
+    font-size: 2em;
+}
+h2 {
+    font-size: 1.5em;
 }
