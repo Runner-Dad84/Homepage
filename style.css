@@ -177,10 +177,6 @@ a:hover {
     padding: 1%;
     background-image: linear-gradient(black, gray);
 }
-.picture  {
-    outline: solid white 3px;
-    box-shadow: -1em .5em .5em purple;;
-}
 .picture {
     width: 15vw;
     aspect-ratio: 1;
@@ -344,4 +340,14 @@ nav {
         font-size: 1.5em;
         scroll-margin-top:17vh;
     }
+}
+
+#resume {
+    background-image: linear-gradient(lightgray, pink);
+}
+.sunrise {
+    
+    width: 100%;
+    aspect-ratio: 1;
+    z-index: 1;
 }
