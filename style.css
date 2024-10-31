@@ -12,8 +12,8 @@ header, footer {
     display: flex;
     justify-content: space-around;
     align-items: center; 
-    height: 10%;
-    width: 100%;
+    height: 7.5vh;
+    width: 100vw;
     z-index: 1;
     background-image: radial-gradient(darkgray 5%, rgb(13, 13, 87) 90%);
     color: white;
@@ -171,7 +171,7 @@ a:hover {
     position: relative;
     left: 10%;
     top: 20%;
-    width: 100vw;
+    width: 85vw;
     text-wrap: wrap;
 }
 .nameF, .nameL, .tagline, .summary {
@@ -204,6 +204,15 @@ a:hover {
     }
     100% {
         opacity: 100%;
+    }
+}
+/*home media*/
+@media (max-width: 400px) {
+    .nameF, .nameL {
+        font-size: 3em;
+    }
+    i, a {
+        font-size: 1.5em;
     }
 }
 
