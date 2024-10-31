@@ -117,9 +117,10 @@ a:hover {
     background: radial-gradient(circle, white .1vh, transparent 1.5px),
     radial-gradient(circle, white .15vh, transparent 1.5px),
     radial-gradient(circle, white .2vh, transparent 2px),
-    radial-gradient(circle, white .22vh, transparent 2.5px);
+    radial-gradient(circle, white .22vh, transparent 2.5px),
+    radial-gradient(circle, white .25vh, transparent 3px);
     background-size: 50vw 50vh;
-    background-position: 41vw 70vh, 17vw 31vh, 81vw 20vh, 72vw 90vh;
+    background-position: 41vw 70vh, 17vw 31vh, 81vw 20vh, 72vw 90vh, 50vw 76vh;
     animation: twinkle2 3s infinite;
 }
 @keyframes twinkle2 {
@@ -132,7 +133,7 @@ a:hover {
     border-radius: 50%;
     height: .75vh;
     aspect-ratio: 1;
-    top: 40%;
+    top: 20%;
     left: 99%;
     background-color: white;
     animation-name: fly;
@@ -149,7 +150,7 @@ a:hover {
         height: .4vh;
     }
     100% {opacity: 0;
-        transform: translate(-50vw, -20vh);
+        transform: translate(-70vw, -25vh);
         height: 0.25vh;
     }
 }
@@ -406,3 +407,4 @@ h2 {
     font-size: 1.5em;
     margin: .05em;
 }
+
