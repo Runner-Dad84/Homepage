@@ -51,6 +51,24 @@ a:hover {
     font-weight: bolder;
 }
 
+@media (min-aspect-ratio: 3/4) {
+    footer{
+        bottom: 7.5vh;
+    }
+}
+
+@media (min-aspect-ratio: 3/5) and (max-aspect-ratio: 7/10) {
+    footer{
+        bottom: 27vh;
+    }
+    .carousel {
+        margin-top: -30%;
+    }
+    #edu {
+        margin-top: -30%;
+    }
+}
+
 /* <uniquifier>: Use a unique and descriptive class name
  <weight>: Use a value from 200 to 900 */
 
