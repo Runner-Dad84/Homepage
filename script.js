@@ -8,7 +8,8 @@ navBtns.forEach(btn => {
     btn.addEventListener('click', (e)=> {
         e.preventDefault();
         textProj.forEach(text => text.style.display = 'none');
-        console.log(btn.id);
+        let target = (btn.id).replace('nav', 'text');
+        console.log(target);
     })
     
 }
