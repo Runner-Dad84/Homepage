@@ -308,6 +308,11 @@ a:hover {
     font-size: 2em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+#textB,
+#textC,
+#textD {
+    display: none;
+}
 .viewer {
     grid-column: 1;
     justify-self: center;
