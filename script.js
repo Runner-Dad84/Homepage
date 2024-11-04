@@ -1,12 +1,16 @@
 let navBtns = document.querySelectorAll('.navButn');
+let textBox = document.getElementsByClassName('projDesc');
+let textProj = document.querySelectorAll('.textProj');
 
-console.log(navBtns);
+
 
 navBtns.forEach(btn => {
     btn.addEventListener('click', (e)=> {
         e.preventDefault();
-    })
 
+        textProj.forEach(text => text.style.display = 'none');
+    })
+    
 }
 )
 
